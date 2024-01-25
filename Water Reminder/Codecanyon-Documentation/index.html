@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Water Drinking Reminder</title>
+	<link rel="icon" href="assets/images/thumbnail.png" type="image/png" sizes="16x16">
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Water Drinking Reminder&rdquo; Documentation by &ldquo;Infibrain Technologies LLP&rdquo; v1.0</h3>
+		
+		<hr>
+	
+		<h1 class="center">&ldquo;Water Drinking Reminder&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 01/23/2020<br>
+					By: Infibrain Technologies LLP<br>
+					Email: <a href="mailto:info@infibrain.com">info@infibrain.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my application. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/infibrain"  target="_blank">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#setupProject">Setup of Project</a></li>
+			<li><a href="#projectStructure">Project Structure</a></li>
+			<li><a href="#javaStructure">JAVA Files and Structure</a></li>
+			<li><a href="#xmlFiles">XML Files and Structure</a></li>
+			<li><a href="#styles">Styles</a></li>
+			<li><a href="#projectResources">Project Resources</a></li>
+			<li><a href="#buildProject">Build Project</a></li>
+			<li><a href="#runProject">Run Project</a></li>
+		</ol>
+		
+		<hr>
+		
+		
+		<h3 id="setupProject"><strong>A) Setup of Project</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Here we are sharing step by step guide how to open this android project in Android Studio.</p>
+		
+		<ul>
+			<li>Download the latest android studio setup file from this <a href="https://developer.android.com/studio?gclid=CjwKCAiAsIDxBRAsEiwAV76N880GhfI_OlobzQcnGL8gzGxRH8eCmF9DGpOppx8ENRRhGfFWDMWLYBoCmQcQAvD_BwE" target="_blank">location</a>.</li>
+			<li>Once download is completed install android studio over your system.</li>
+			<li>If you are not sure about android studio configuration, please refer over <a href="https://developer.android.com/studio/install" target="_blank">here</a>.</li>
+			<li>Once Android Studio Setup is completed, continue with below specified steps.</li>
+		
+			<ol>
+				<li>Open Android Studio. After that click on "Open an existing Android Studio project".</li>
+				<li>After that select the Studio file from "Water Drinking Reminder" downloaded folder  and then click OK.</li>
+				<li>Wait until indexing of the "Water Drinking Reminder" project is completed.</li>
+				<li>After that click on Projects >> app >> java and choose "Screen_Splash" file, you will be able to view android programming code in Java.</li>
+				<li>After that click res and then click layout and choose screen_splash.xml file. Here your XML file for designing Android UI will be opened.</li>
+			</ol>
+		</ul>	
+		
+		
+		<hr>
+		
+		
+		<h3 id="projectStructure"><strong>B) Project Structure</strong> - <a href="#toc">top</a></h3>
+		
+		
+		
+		<div class="span-12">
+			<p>By default, Android Studio displays project files in the <b>Android</b> view. </p>
+			<p>This <b>Android</b> view contains app directory, some of the modules and Gradle Script group</p>
+			<p>You can add a new module to the project by clicking <b>File > New > New Module</b>.</p>
+			<p>Within each Android app module, files are shown in the following groups:</p>
+			<ol>
+				<li><b>manifests</b> - Contains the <a href="https://developer.android.com/guide/topics/manifest/manifest-intro.html" target="_blank"> AndroidManifest.xml file</a>. AndroidManifest.xml file describes the nature of the application and each of its components. It contains all require permission.</li>
+				<li><b>java</b> - Contains the Java source code files, separated by package names, including JUnit test code. <a href="#javaStructure">Click here</a> to know more about JAVA file structure.
+				</li>
+				<li><b>assets</b> - Contains the all application's raw asset files like font file, etc...
+				<li><b>res</b> - Contains all non-code resources, such as XML layouts, UI strings, and bitmap images. For more information about all possible resource types, see <a href="https://developer.android.com/guide/topics/resources/providing-resources.html" target="_blank">Providing Resources</a></li>
+				<li><b>Gradle Script</b> - Shows all the project's build-related configuration files.
+				<ul>
+					<li><b>build.gradle(module)</b> - This defines the module-specific build configurations.</li>
+					<li><b>build.gradle(project)</b> - This file is integral to the project, so you should maintain them in revision control with all other source code. Here, you can add new library(dependencies) for this project.</li></ul>
+					</li>
+			</ol>
+			
+		</div>
+		
+		<div class="span-6">
+			<p>Here is the preview of <b>Android</b> view:</p>
+			<img src="assets/images/project_structure.png" width="223" height="500" alt="Project Structure" />
+			</br></br>
+		</div>
+		
+		
+		<hr>
+		
+		
+		<h3 id="javaStructure"><strong>C) JAVA Files Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This application have 2 types of Java file structure.</p>
+		
+		<ul>
+			<li>The general activity structure is the same throughout the application. Here is the general structure</li>
+		</ul>
+		
+		<img src="assets/images/activity_structure.png" width="800" height="391" alt="Activity Structure" />
+		</br></br>
+		
+		<ul>
+		<li>The general fragment structure is the same throughout the application. Here is the general structure</li>
+		</ul>
+
+		<img src="assets/images/fragment_structure.png" width="800" height="391" alt="Fragment Structure" />
+		</br></br>
+		
+		<hr>
+
+		<h3 id="xmlFiles"><strong>D) XML Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>The general XML structure is the same throughout the application. Here is the general structure</p> 
+		
+		<img src="assets/images/xml_structure.png" width="800" height="391" alt="XML Structure" />
+		</br></br>
+		
+		<hr>
+		
+		<h3 id="styles"><strong>E) Styles</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Look and feel of the application is being render from this file, if you want to modify the look and feel then you can do it by adding or updating attributes over here.</p>
+		
+		<img src="assets/images/style_structure.png" width="800" height="391" alt="Style Structure" />
+		</br></br>
+		
+		<hr>
+		
+		<h3 id="projectResources"><strong>F) Project Resources</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Resource directories supported for this project resides over app/res/ directory and it contains application resources, such as drawable files, layout files, and UI string. See <a href="https://developer.android.com/guide/topics/resources/providing-resources" target="_blank">Application Resources</a> for more information.</p>
+		
+		<ul>
+			<li><b>anim/</b> - XML files that define animations.</li>
+			<li><b>color/</b> - XML files that define a state list of colors.</li>
+			<li><b>drawable/</b> - Bitmap files (.png, .9.png, .jpg, .gif) or Custom drawable XML files.</li>
+			<li><b>mipmap/</b> - Drawable files for different launcher icon densities.</li>
+			<li><b>layout/</b> - XML files that define a user interface layout.</li>
+			<li><b>values/</b> - XML files that contain simple values, such as strings, dimension, styles and colors.</li>
+			<li><b>font/</b> - Font files with extensions such as .ttf, .otf.</li>
+			
+		</ul>
+			
+		<hr>
+		
+		<h3 id="buildProject"><strong>G) Build Project</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Confused! on how to build project and generate APK file? Here we are sharing step by step guide on how to generate APK in Android Studio.</p>
+		
+		<ul>
+			<li>Click on Build menu</li>
+			<li>Select Build Bundle(S)/ APK(S)</li>
+			<li>Then, Click on Build APK(S)</li>
+		</ul>
+		
+		<img src="assets/images/build_project.png" width="800" height="301" alt="Build APK" />
+		</br></br>
+		
+		<hr>
+		
+		<h3 id="runProject"><strong>H) Run Project</strong> - <a href="#toc">top</a></h3>
+		
+		<p>You can run the project into your Phone or Android Virtual Device(Emulator) by clicking on the red marked icon in the following screenshot</p>
+		
+		<img src="assets/images/run_project.png" width="800" height="301" alt="Run APK" />
+		</br></br>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this application. As I said at the beginning, I'd be glad to help you if you have any questions relating to this application. No guarantees, but I'll do my best to assist.</p> 
+		
+		<p class="append-bottom alt large"><strong>Infibrain Technologies LLP</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
